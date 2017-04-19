@@ -92,3 +92,37 @@ h1::before {
 		max-width: 0;
 	}
 }
+
+
+
+@media screen and (max-width: 426px) {
+	
+	.container {
+		height: 100vw;
+		max-width: 400px;
+		
+	}
+
+	h1::before {
+		content: '';
+		animation: none;
+	}
+
+	.container h1 {
+		color: #fff;
+		font-size: 16px;
+	}
+
+	div.query > h2 {
+		font-size: 20px;
+	}
+
+	div.query > p {
+		font-size: 14px;
+	}
+
+	div.query {
+		height: 250px;
+		width: 70%;
+	}
+}
