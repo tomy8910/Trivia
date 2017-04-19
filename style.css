@@ -5,10 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 ::selection {
-	
-	background-color: #f2f191;
+    background-color: #f2f191;
 }
+
 html,
 body {
     font-size: 16px;
@@ -18,111 +19,104 @@ body {
 }
 
 .container {
-
-	height: 100vh;
-	padding: 20px;
-	background-color: #2c3e50;
-
-
+    height: 100vh;
+    padding: 20px;
+    background-color: #2c3e50;
 }
 
 .container div {
-	background:#34495e;
-	color: white;
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	padding: 40px;
-	width: 40%;
-	margin: 0 auto;
+    background: #34495e;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    width: 40%;
+    margin: 0 auto;
 }
 
 div.query {
-	height: 250px;
+    height: 250px;
 }
 
 div.query > p {
-	font-weight: 400;
-	font-family: 'Roboto Condensed', sans-serif;
-	width: 100%;
-	margin: 20px auto;
-	letter-spacing: 1px;
-	text-align: center;
-	transition: transform 1.5s ease-out;	
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    margin: 20px auto;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: transform 1.5s ease-out;
 }
 
 .from-left {
-	transform: translateX(-1000%);
+    transform: translateX(-1000%);
 }
 
 .from-right {
-	transform: translateX(1000%);
+    transform: translateX(1000%);
 }
 
 div.query > h2 {
-	text-align: center;
-	margin-bottom: 40px ;
-	transition: transform 1.5s ease-out;
-	
-}
-
-.container h1 {
-	margin-bottom: 40px;
-	position: relative;
-	color: rgba(0, 0, 0, 0.3);
-	text-align: center;
+    text-align: center;
+    margin-bottom: 40px;
+    transition: transform 1.5s ease-out;
 }
 
 .baby {
-	margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+    font-family: 'Press Start 2P';
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.container h1 {
+    margin-bottom: 40px;
+    position: relative;
+    color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.baby {
+    margin: 0 auto;
 }
 
 h1::before {
-	content: 'Be Smarter Today';
-	position: absolute;
-	color: #fff;
-	overflow: hidden;
-	white-space: nowrap;
-	max-width: 17em;
-	animation: change 8s linear infinite alternate;
+    content: 'Be Smarter Today';
+    position: absolute;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 17em;
+    animation: change 8s linear infinite alternate;
 }
-
-
 
 @keyframes change {
-	0% {
-		max-width: 0;
-	}
+    0% {
+        max-width: 0;
+    }
 }
 
-
-
 @media screen and (max-width: 426px) {
-	
-	.container {
-		height: 100vw;
-		max-width: 400px;
-		
-	}
-
-	h1::before {
-		content: '';
-		animation: none;
-	}
-
-	.container h1 {
-		color: #fff;
-		font-size: 16px;
-	}
-
-	div.query > h2 {
-		font-size: 20px;
-	}
-
-	div.query > p {
-		font-size: 14px;
-	}
-
-	div.query {
-		height: 250px;
-		width: 70%;
-	}
+    .container {
+        height: 100vw;
+        max-width: 400px;
+    }
+    
+    
+    .container h1 {
+     
+        font-size: 16px;
+    }
+    div.query > h2 {
+        font-size: 20px;
+    }
+    div.query > p {
+        font-size: 14px;
+    }
+    div.query {
+        height: 250px;
+        width: 70%;
+    }
 }
