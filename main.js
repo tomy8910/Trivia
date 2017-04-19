@@ -3,6 +3,7 @@ const query = document.querySelector('.query').textContent
 const btn = document.querySelector('.baby')
 const trivia = document.querySelector('.trivia')
 const um = document.querySelector('.number')
+
 function cmon() {
 	const http = new XMLHttpRequest()
 	const url = 'https://numbersapi.p.mashape.com/random/trivia?fragment=false&json=true&max=20&min=10'
@@ -20,14 +21,16 @@ function cmon() {
 	       	const newNewText = newText[0].toUpperCase()
 	       	newText[0] = newNewText
 	       	newText = newText.join('')
+
 	       	
 
 	       	trivia.textContent = newText
 	       	um.textContent = number
+
 	       	um.classList.remove('from-left')
 	       	trivia.classList.remove('from-right')
 
-	       	console.log(text,number)
+	     
 
 	    } else if (http.readyState === 4 && http.status !== 200) {
 	        trivia.textContent = 'Try Again'
