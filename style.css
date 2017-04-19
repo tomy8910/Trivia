@@ -101,7 +101,7 @@ h1::before {
 @media screen and (max-width: 426px) {
     .container {
         height: 100vh;
-        max-width: 400px;
+        max-width: 426px;
     }
     
     
