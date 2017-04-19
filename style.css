@@ -116,7 +116,7 @@ h1::before {
         font-size: 12px;
     }
     div.query {
-        height: 250px;
+        height: 400px;
         width: 70%;
     }
 }
